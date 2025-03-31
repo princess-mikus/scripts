@@ -16,7 +16,7 @@ else
 	mkdir -p ~/.var/app/com.spotify.Client/config/spotify-adblock && cp config.toml ~/.var/app/com.spotify.Client/config/spotify-adblock
 	flatpak override --user --filesystem="~/.spotify-adblock/spotify-adblock.so" --filesystem="~/.config/spotify-adblock/config.toml" com.spotify.Client
 
-	cp spotify-launcher ~/.local/share/applications/com.spotify.Client.desktop
+	cp ./spotify-launcher ~/.local/share/applications/com.spotify.Client.desktop
 	echo "Success! Cleaning"
 	rm -rf ~/.spotify-adblock/repo
 	
